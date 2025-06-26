@@ -1,0 +1,10 @@
+# MongoDB Connection
+MONGODB_URI=mongodb+srv://your-username:your-password@your-cluster.mongodb.net/coming-soon?retryWrites=true&w=majority
+
+# Server Configuration
+PORT=3000
+NODE_ENV=production
+
+# Replace with your actual MongoDB connection string
+# You can use the same MongoDB as your main platform or create a separate database
+# Copy this file to .env and update with your actual values 
