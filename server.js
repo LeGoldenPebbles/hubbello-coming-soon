@@ -11,6 +11,10 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.static('.'));
+app.use('/style.css', express.static('style.css'));
+app.use('/script.js', express.static('script.js'));
+app.use('/logo.png', express.static('logo.png'));
+app.use('/LandingTop.mp4', express.static('LandingTop.mp4'));
 
 // MongoDB Schema for Coming Soon Subscribers
 const subscriberSchema = new mongoose.Schema({
