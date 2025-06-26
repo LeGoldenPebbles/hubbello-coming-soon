@@ -2,30 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
+      "src": "api/index.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "style.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "script.js", 
-      "use": "@vercel/static"
-    },
-    {
-      "src": "logo.png",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "LandingTop.mp4",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "/api/index.js"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/server.js"
+      "dest": "/api/index.js"
     }
   ]
 } 
